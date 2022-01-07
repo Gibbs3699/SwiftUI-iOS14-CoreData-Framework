@@ -13,6 +13,9 @@
 		845EEBA2278896B80000F150 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBA1278896B80000F150 /* Preview Assets.xcassets */; };
 		845EEBA4278896B80000F150 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBA3278896B80000F150 /* Persistence.swift */; };
 		845EEBA7278896B80000F150 /* ToDo_App_Widget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBA5278896B80000F150 /* ToDo_App_Widget.xcdatamodeld */; };
+		845EEBB0278897A30000F150 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBAD278897A30000F150 /* sound-rise.mp3 */; };
+		845EEBB1278897A30000F150 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBAE278897A30000F150 /* sound-ding.mp3 */; };
+		845EEBB2278897A30000F150 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBAF278897A30000F150 /* sound-tap.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,10 @@
 		845EEBA1278896B80000F150 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		845EEBA3278896B80000F150 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		845EEBA6278896B80000F150 /* ToDo_App_Widget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo_App_Widget.xcdatamodel; sourceTree = "<group>"; };
+		845EEBAD278897A30000F150 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		845EEBAE278897A30000F150 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		845EEBAF278897A30000F150 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		845EEBBC278898C30000F150 /* ToDo-App-Widget-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ToDo-App-Widget-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +62,15 @@
 		845EEB99278896B60000F150 /* ToDo-App&Widget */ = {
 			isa = PBXGroup;
 			children = (
+				845EEBBC278898C30000F150 /* ToDo-App-Widget-Info.plist */,
 				845EEB9A278896B60000F150 /* ToDo_App_WidgetApp.swift */,
-				845EEB9C278896B60000F150 /* ContentView.swift */,
+				845EEBBB278898850000F150 /* View */,
+				845EEBB9278898510000F150 /* Model */,
+				845EEBB7278897FA0000F150 /* Extension */,
+				845EEBB6278897EC0000F150 /* Utility */,
+				845EEBB5278897E10000F150 /* Style */,
+				845EEBB3278897B30000F150 /* Sound */,
 				845EEB9E278896B80000F150 /* Assets.xcassets */,
-				845EEBA3278896B80000F150 /* Persistence.swift */,
 				845EEBA5278896B80000F150 /* ToDo_App_Widget.xcdatamodeld */,
 				845EEBA0278896B80000F150 /* Preview Content */,
 			);
@@ -71,6 +83,53 @@
 				845EEBA1278896B80000F150 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		845EEBB3278897B30000F150 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				845EEBAE278897A30000F150 /* sound-ding.mp3 */,
+				845EEBAD278897A30000F150 /* sound-rise.mp3 */,
+				845EEBAF278897A30000F150 /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		845EEBB5278897E10000F150 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		845EEBB6278897EC0000F150 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		845EEBB7278897FA0000F150 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		845EEBB9278898510000F150 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				845EEBA3278896B80000F150 /* Persistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		845EEBBB278898850000F150 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				845EEB9C278896B60000F150 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845EEBB1278897A30000F150 /* sound-ding.mp3 in Resources */,
+				845EEBB0278897A30000F150 /* sound-rise.mp3 in Resources */,
 				845EEBA2278896B80000F150 /* Preview Assets.xcassets in Resources */,
+				845EEBB2278897A30000F150 /* sound-tap.mp3 in Resources */,
 				845EEB9F278896B80000F150 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -259,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,9 +342,9 @@
 				DEVELOPMENT_TEAM = 5NV8L9334K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ToDo-App-Widget-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,9 +371,9 @@
 				DEVELOPMENT_TEAM = 5NV8L9334K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ToDo-App-Widget-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
