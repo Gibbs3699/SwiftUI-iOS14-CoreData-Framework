@@ -16,6 +16,8 @@
 		845EEBB0278897A30000F150 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBAD278897A30000F150 /* sound-rise.mp3 */; };
 		845EEBB1278897A30000F150 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBAE278897A30000F150 /* sound-ding.mp3 */; };
 		845EEBB2278897A30000F150 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBAF278897A30000F150 /* sound-tap.mp3 */; };
+		845EEBC32789D5F60000F150 /* Items+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBC12789D5F60000F150 /* Items+CoreDataClass.swift */; };
+		845EEBC42789D5F60000F150 /* Items+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBC22789D5F60000F150 /* Items+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		845EEBAE278897A30000F150 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		845EEBAF278897A30000F150 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		845EEBBC278898C30000F150 /* ToDo-App-Widget-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ToDo-App-Widget-Info.plist"; sourceTree = SOURCE_ROOT; };
+		845EEBC12789D5F60000F150 /* Items+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataClass.swift"; sourceTree = "<group>"; };
+		845EEBC22789D5F60000F150 /* Items+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		845EEB8E278896B60000F150 = {
 			isa = PBXGroup;
 			children = (
+				845EEBC12789D5F60000F150 /* Items+CoreDataClass.swift */,
+				845EEBC22789D5F60000F150 /* Items+CoreDataProperties.swift */,
 				845EEB99278896B60000F150 /* ToDo-App&Widget */,
 				845EEB98278896B60000F150 /* Products */,
 			);
@@ -71,7 +77,6 @@
 				845EEBB5278897E10000F150 /* Style */,
 				845EEBB3278897B30000F150 /* Sound */,
 				845EEB9E278896B80000F150 /* Assets.xcassets */,
-				845EEBA5278896B80000F150 /* ToDo_App_Widget.xcdatamodeld */,
 				845EEBA0278896B80000F150 /* Preview Content */,
 			);
 			path = "ToDo-App&Widget";
@@ -119,6 +124,7 @@
 		845EEBB9278898510000F150 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				845EEBA5278896B80000F150 /* ToDo_App_Widget.xcdatamodeld */,
 				845EEBA3278896B80000F150 /* Persistence.swift */,
 			);
 			path = Model;
@@ -205,9 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845EEBC32789D5F60000F150 /* Items+CoreDataClass.swift in Sources */,
 				845EEBA4278896B80000F150 /* Persistence.swift in Sources */,
 				845EEBA7278896B80000F150 /* ToDo_App_Widget.xcdatamodeld in Sources */,
 				845EEB9D278896B60000F150 /* ContentView.swift in Sources */,
+				845EEBC42789D5F60000F150 /* Items+CoreDataProperties.swift in Sources */,
 				845EEB9B278896B60000F150 /* ToDo_App_WidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
