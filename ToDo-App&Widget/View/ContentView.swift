@@ -11,6 +11,7 @@ import CoreData
 struct ContentView: View {
     //MARK: - PROPERTY
     @State var task: String = ""
+    @State var tap: Bool = false
     
     private var isButtonDisabled: Bool {
         task.isEmpty
@@ -72,32 +73,40 @@ struct ContentView: View {
                         )
                         .cornerRadius(10)
                     
-                    Button(action: addItem, label: {
-                        Spacer()
-                        Text("SAVE")
-                        Spacer()
-                    })
-                        .disabled(isButtonDisabled)
-                        .padding()
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .background(isButtonDisabled ? Color.gray : Color.pink)
+                    ZStack {
+                        Button(action: addItem, label: {
+                            Spacer()
+                            Text("SAVE")
+                            Spacer()
+                        })
+                            .disabled(isButtonDisabled)
+                            .padding()
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .background(isButtonDisabled ? Color.gray : Color.pink)
                         .cornerRadius(10)
+                        
+                        LottieView(name: tap ? "64963-topset-complete" : "")
+                            .opacity(tap ? 1 : 0)
+                            .frame(width: 120, height: 120)
+//                            .animation(Animation.easeOut(duration: 0.1).delay(0.1))
+                    }
                 }
                 .padding()
                 List {
                     ForEach(items) { item in
                             // if items.task equal to nil return ""
                             VStack(alignment: .leading) {
-                                Text(item.task ?? "")
-                                    .font(.headline)
-                                .fontWeight(.bold)
+                                    Text(item.task ?? "")
+                                        .font(.headline)
+                                    .fontWeight(.bold)
+                                    
+                                    Spacer()
                                 
-                                Spacer()
+                                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                                        .font(.footnote)
+                                        .foregroundColor(.gray)
                                 
-                                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                                    .font(.footnote)
-                                    .foregroundColor(.gray)
                             }
                         }
                     .onDelete(perform: deleteItems)
