@@ -74,6 +74,7 @@ struct ContentView: View {
                         Text("SAVE")
                         Spacer()
                     })
+                        .disabled(isButtonDisabled)
                         .padding()
                         .font(.headline)
                         .foregroundColor(.white)
