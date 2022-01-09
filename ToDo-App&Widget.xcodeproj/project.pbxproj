@@ -19,6 +19,7 @@
 		845EEBC6278B015A0000F150 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBC5278B015A0000F150 /* Content.swift */; };
 		845EEBC9278B08670000F150 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBC7278B08670000F150 /* Item+CoreDataClass.swift */; };
 		845EEBCA278B08670000F150 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBC8278B08670000F150 /* Item+CoreDataProperties.swift */; };
+		845EEBCC278B41DA0000F150 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBCB278B41DA0000F150 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		845EEBC5278B015A0000F150 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		845EEBC7278B08670000F150 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		845EEBC8278B08670000F150 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		845EEBCB278B41DA0000F150 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		845EEBB7278897FA0000F150 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				845EEBCB278B41DA0000F150 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				845EEB9D278896B60000F150 /* ContentView.swift in Sources */,
 				845EEBCA278B08670000F150 /* Item+CoreDataProperties.swift in Sources */,
 				845EEBC9278B08670000F150 /* Item+CoreDataClass.swift in Sources */,
+				845EEBCC278B41DA0000F150 /* HideKeyboardExtension.swift in Sources */,
 				845EEB9B278896B60000F150 /* ToDo_App_WidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
