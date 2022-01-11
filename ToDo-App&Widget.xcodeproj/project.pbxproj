@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842B9F07278DD7750041C4C0 /* 63844-background-pattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 842B9F06278DD7750041C4C0 /* 63844-background-pattern.json */; };
 		845EEB9B278896B60000F150 /* ToDo_App_WidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEB9A278896B60000F150 /* ToDo_App_WidgetApp.swift */; };
 		845EEB9D278896B60000F150 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEB9C278896B60000F150 /* ContentView.swift */; };
 		845EEB9F278896B80000F150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845EEB9E278896B80000F150 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842B9F06278DD7750041C4C0 /* 63844-background-pattern.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "63844-background-pattern.json"; sourceTree = "<group>"; };
 		845EEB97278896B60000F150 /* ToDo-App&Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-App&Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		845EEB9A278896B60000F150 /* ToDo_App_WidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_App_WidgetApp.swift; sourceTree = "<group>"; };
 		845EEB9C278896B60000F150 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		845EEBD3278B45810000F150 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				842B9F06278DD7750041C4C0 /* 63844-background-pattern.json */,
 				845EEBD4278B462E0000F150 /* 64963-topset-complete.json */,
 			);
 			path = Lottie;
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845EEBB1278897A30000F150 /* sound-ding.mp3 in Resources */,
+				842B9F07278DD7750041C4C0 /* 63844-background-pattern.json in Resources */,
 				845EEBB0278897A30000F150 /* sound-rise.mp3 in Resources */,
 				845EEBD5278B462E0000F150 /* 64963-topset-complete.json in Resources */,
 				845EEBA2278896B80000F150 /* Preview Assets.xcassets in Resources */,

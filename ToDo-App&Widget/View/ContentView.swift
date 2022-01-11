@@ -38,6 +38,10 @@ struct ContentView: View {
             do {
                 try viewContext.save()
                 self.isSuccessful = true
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    self.isSuccessful = false
+                }
 
             } catch {
 
@@ -67,62 +71,74 @@ struct ContentView: View {
     //MARK: - BODY
     var body: some View {
         NavigationView {
-            VStack {
-                VStack(spacing: 16){
-                    TextField("New Task", text: $task)
-                        .padding()
-                        .background(
-                            Color(UIColor.systemGray6)
-                        )
-                        .cornerRadius(10)
-                    
-                    ZStack {
-                        Button(action: addItem, label: {
-                                Spacer()
-                                Text("SAVE")
-                                Spacer()
-                            })
-                                .disabled(isButtonDisabled)
-                                .padding()
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .background(isButtonDisabled ? Color.gray : Color.pink)
-                                .cornerRadius(10)
+            ZStack {
+                VStack {
+                    VStack(spacing: 16){
+                        TextField("New Task", text: $task)
+                            .padding()
+                            .background(
+                                Color(UIColor.systemGray6)
+                            )
+                            .cornerRadius(10)
                         
-                        if self.isSuccessful{
-                            SuccessView()
-                        }
-                    }
-                    
-                    
-                }
-                .padding()
-                List {
-                    ForEach(items) { item in
-                            // if items.task equal to nil return ""
-                            VStack(alignment: .leading) {
-                                    Text(item.task ?? "")
-                                        .font(.headline)
-                                    .fontWeight(.bold)
-                                    
+                        ZStack {
+                            Button(action: addItem, label: {
                                     Spacer()
-                                
-                                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                                        .font(.footnote)
-                                        .foregroundColor(.gray)
-                                
+                                    Text("SAVE")
+                                    Spacer()
+                                })
+                                    .disabled(isButtonDisabled)
+                                    .padding()
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                    .background(isButtonDisabled ? Color.gray : Color.pink)
+                                    .cornerRadius(10)
+                            
+                            if self.isSuccessful{
+                                SuccessView()
                             }
                         }
-                    .onDelete(perform: deleteItems)
-                }//: LIST
-            } //: VSTACK
-            .navigationBarTitle("Daily Task", displayMode: .large)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                        
+                        
+                    }
+                    .padding()
+                    List {
+                        ForEach(items) { item in
+                                // if items.task equal to nil return ""
+                                VStack(alignment: .leading) {
+                                        Text(item.task ?? "")
+                                            .font(.headline)
+                                        .fontWeight(.bold)
+                                        
+                                        Spacer()
+                                    
+                                        Text("Task at \(item.timestamp!, formatter: itemFormatter)")
+                                            .font(.footnote)
+                                            .foregroundColor(.gray)
+                                    
+                                }
+                            }
+                        .onDelete(perform: deleteItems)
+                    }//: LIST
+                    .listStyle(InsetGroupedListStyle())
+                } //: VSTACK
+                }//: ZSTACK
+                .onAppear(){
+                    UITableView.appearance().backgroundColor = UIColor.clear
+                }
+                .navigationBarTitle("Daily Task", displayMode: .large)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        EditButton()
                 }
             } //: TOOLBAR
+            .background(
+                LottieView(name: "63844-background-pattern", loopMode: .loop)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .opacity(0.85)
+            )
         } //: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
