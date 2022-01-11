@@ -134,7 +134,7 @@ struct ContentView: View {
             } //: TOOLBAR
             .background(
                 ZStack {
-                    LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.8), Color.blue.opacity(0.1)]), startPoint: .topLeading, endPoint: .bottomLeading)
+                    LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.5), Color.blue.opacity(0.1)]), startPoint: .topLeading, endPoint: .bottomLeading)
                         .ignoresSafeArea(.all)
                     
                     LottieView(name: "background2", loopMode: .loop)
