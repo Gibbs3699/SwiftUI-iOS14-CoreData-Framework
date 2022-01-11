@@ -73,6 +73,19 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 VStack {
+                    HStack() {
+                        Text("🥳 DAILY TASK...")
+//                            .underline()
+                            .font(.system(size: 35))
+                            .font(.headline)
+                            .fontWeight(.heavy)
+                            .foregroundColor(.black)
+                        
+                        LottieView(name: "write")
+                            .frame(width: 50, height: 50)
+                    }
+                    .padding(.top, -50)
+                        
                     VStack(spacing: 16){
                         TextField("New Task", text: $task)
                             .padding()
@@ -121,12 +134,14 @@ struct ContentView: View {
                         .onDelete(perform: deleteItems)
                     }//: LIST
                     .listStyle(InsetGroupedListStyle())
+                    .shadow(color: Color.black.opacity(0.2), radius: 20, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 10)
+                    .padding(.vertical, 0)
+                    .frame(maxWidth: 640)
                 } //: VSTACK
                 }//: ZSTACK
                 .onAppear(){
                     UITableView.appearance().backgroundColor = UIColor.clear
                 }
-                .navigationBarTitle("Daily Task", displayMode: .large)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         EditButton()
@@ -134,7 +149,7 @@ struct ContentView: View {
             } //: TOOLBAR
             .background(
                 ZStack {
-                    LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.5), Color.blue.opacity(0.1)]), startPoint: .topLeading, endPoint: .bottomLeading)
+                    LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.3), Color.blue.opacity(0.1)]), startPoint: .topLeading, endPoint: .bottomLeading)
                         .ignoresSafeArea(.all)
                     
                     LottieView(name: "background2", loopMode: .loop)
@@ -146,6 +161,8 @@ struct ContentView: View {
             )
         } //: NAVIGATION
         .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
