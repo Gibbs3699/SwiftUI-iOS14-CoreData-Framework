@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		842B9F07278DD7750041C4C0 /* 63844-background-pattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 842B9F06278DD7750041C4C0 /* 63844-background-pattern.json */; };
+		842B9F09278DE32E0041C4C0 /* background.json in Resources */ = {isa = PBXBuildFile; fileRef = 842B9F08278DE32E0041C4C0 /* background.json */; };
 		845EEB9B278896B60000F150 /* ToDo_App_WidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEB9A278896B60000F150 /* ToDo_App_WidgetApp.swift */; };
 		845EEB9D278896B60000F150 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEB9C278896B60000F150 /* ContentView.swift */; };
 		845EEB9F278896B80000F150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845EEB9E278896B80000F150 /* Assets.xcassets */; };
@@ -25,10 +26,13 @@
 		845EEBD1278B45320000F150 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBD0278B45320000F150 /* LottieView.swift */; };
 		845EEBD5278B462E0000F150 /* 64963-topset-complete.json in Resources */ = {isa = PBXBuildFile; fileRef = 845EEBD4278B462E0000F150 /* 64963-topset-complete.json */; };
 		845EEBD7278B4B080000F150 /* Successful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EEBD6278B4B070000F150 /* Successful.swift */; };
+		846D467A278DE54500D973CC /* background1.json in Resources */ = {isa = PBXBuildFile; fileRef = 846D4679278DE54500D973CC /* background1.json */; };
+		846D467C278DE8B400D973CC /* background2.json in Resources */ = {isa = PBXBuildFile; fileRef = 846D467B278DE8B400D973CC /* background2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		842B9F06278DD7750041C4C0 /* 63844-background-pattern.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "63844-background-pattern.json"; sourceTree = "<group>"; };
+		842B9F08278DE32E0041C4C0 /* background.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = background.json; sourceTree = "<group>"; };
 		845EEB97278896B60000F150 /* ToDo-App&Widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-App&Widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		845EEB9A278896B60000F150 /* ToDo_App_WidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_App_WidgetApp.swift; sourceTree = "<group>"; };
 		845EEB9C278896B60000F150 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		845EEBD0278B45320000F150 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		845EEBD4278B462E0000F150 /* 64963-topset-complete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "64963-topset-complete.json"; sourceTree = "<group>"; };
 		845EEBD6278B4B070000F150 /* Successful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Successful.swift; sourceTree = "<group>"; };
+		846D4679278DE54500D973CC /* background1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = background1.json; sourceTree = "<group>"; };
+		846D467B278DE8B400D973CC /* background2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = background2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,9 @@
 		845EEBD3278B45810000F150 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				846D467B278DE8B400D973CC /* background2.json */,
+				846D4679278DE54500D973CC /* background1.json */,
+				842B9F08278DE32E0041C4C0 /* background.json */,
 				842B9F06278DD7750041C4C0 /* 63844-background-pattern.json */,
 				845EEBD4278B462E0000F150 /* 64963-topset-complete.json */,
 			);
@@ -230,13 +239,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846D467C278DE8B400D973CC /* background2.json in Resources */,
 				845EEBB1278897A30000F150 /* sound-ding.mp3 in Resources */,
 				842B9F07278DD7750041C4C0 /* 63844-background-pattern.json in Resources */,
 				845EEBB0278897A30000F150 /* sound-rise.mp3 in Resources */,
 				845EEBD5278B462E0000F150 /* 64963-topset-complete.json in Resources */,
+				846D467A278DE54500D973CC /* background1.json in Resources */,
 				845EEBA2278896B80000F150 /* Preview Assets.xcassets in Resources */,
 				845EEBB2278897A30000F150 /* sound-tap.mp3 in Resources */,
 				845EEB9F278896B80000F150 /* Assets.xcassets in Resources */,
+				842B9F09278DE32E0041C4C0 /* background.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

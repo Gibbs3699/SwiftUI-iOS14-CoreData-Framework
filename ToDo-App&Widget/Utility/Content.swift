@@ -16,10 +16,8 @@ let itemFormatter: DateFormatter = {
 }()
 
 // MARK: - UI
-//func backgroundLottie() {
-//    LottieView(name: "63844-background-pattern", loopMode: .loop)
-//        .frame(width: 100, height: 100)
-////        .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-//}
+var backgroundLottie: LinearGradient {
+    return LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint: .topLeading, endPoint: .bottomLeading)
+}
 
 // MARK: - UX

@@ -133,9 +133,16 @@ struct ContentView: View {
                 }
             } //: TOOLBAR
             .background(
-                LottieView(name: "63844-background-pattern", loopMode: .loop)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .opacity(0.85)
+                ZStack {
+                    LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.8), Color.blue.opacity(0.1)]), startPoint: .topLeading, endPoint: .bottomLeading)
+                        .ignoresSafeArea(.all)
+                    
+                    LottieView(name: "background2", loopMode: .loop)
+                        .frame(width: 500, height: 300)
+                        .opacity(1)
+                        .padding(.top, 450)
+                    
+                }
             )
         } //: NAVIGATION
         .navigationViewStyle(StackNavigationViewStyle())
