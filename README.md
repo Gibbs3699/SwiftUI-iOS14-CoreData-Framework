@@ -1,3 +1,4 @@
 # SwiftUI-iOS14-CoreData-Framework
 
-ToDo Application
+#self-project
+To Do Application
